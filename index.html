@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chitransh Ganesh Yadav - Web Developer & Coder</title>
+  <meta name="description" content="Hi, I'm Chitransh — a young web developer and 8th std student from India with 20+ websites built. View my work, projects, and contact me today!">
+  <meta name="keywords" content="Chitransh, Web Developer, Student Portfolio, Indian Coder, HTML, CSS, JavaScript, 8th std, Young Coder, Projects, Website">
+  <meta name="author" content="Chitransh Ganesh Yadav">
+
+  <!-- Favicon (logo shown in browser tab) -->
+  <link rel="icon" href="chitransh.jpg" type="image/png">
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Chitransh Ganesh Yadav - Web Developer">
+  <meta property="og:description" content="8th std student & coder | 20+ websites | Portfolio and Vlog site">
+  <meta property="og:image" content="https://chitransh-portfolio-lake.vercel.app/profile.jpg">
+  <meta property="og:url" content="https://chitransh-maths.github.io/...">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #121212;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 0.7rem;
+      border: 2px solid #00ffff;
+    }
+
+    .logo h1 {
+      color: #00ffff;
+      font-size: 1.3rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, #000428, #004e92);
+      animation: gradientShift 15s infinite alternate;
+    }
+
+    @keyframes gradientShift {
+      0% { background: linear-gradient(135deg, #000428, #004e92); }
+      100% { background: linear-gradient(135deg, #1f1c2c, #928dab); }
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background: #00ffff;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: #00ffff;
+      margin-bottom: 1rem;
+    }
+
+    .card-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: #00ffff;
+      color: black;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .logo h1 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="chitransh.jpg" alt="My Photo">
+      <h1>Chitransh Ganesh Yadav</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm Chitransh</h2>
+    <p>A creative young coder from India, currently in 8th std (2025). I've already made 20+ websites and love building cool web experiences.</p>
+    <a href="https://chitransh-maths.github.io/Chitransh-vlogs" target="_blank" class="btn">Visit My Vlog</a>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I’m a passionate self-taught web developer. In just a short time, I've created over 20 websites, each one better than the last! I enjoy learning new tools and building websites that are useful, fun, and beautiful.</p>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="card-container">
+      <div class="card">HTML5</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python (Basic)</div>
+      <div class="card">Web Design</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="card-container">
+      <div class="card">
+        <h4>Quiz System</h4>
+        <p>A subject and level-based quiz system for kids with result analytics.</p>
+      </div>
+      <div class="card">
+        <h4>Chit-Live</h4>
+        <p>A web platform to upload and preview HTML, CSS, Java, Python, and PHP live.</p>
+      </div>
+      <div class="card">
+        <h4>Chitransh Animation</h4>
+        <p>50+ functional HTML animations selectable and downloadable by users.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form class="contact-form" onsubmit="return sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Chitransh Ganesh Yadav. All rights reserved.
+  </footer>
+
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      alert(`Thanks, ${name}! Your message has been sent.`);
+      document.querySelector(".contact-form").reset();
+      return false;
+    }
+  </script>
+
+</body>
+  </html>
+                                                                                                           
