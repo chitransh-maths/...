@@ -225,29 +225,74 @@
     </div>
   </section>
 
-  <section id="contact">
-    <h3>Contact Me</h3>
-    <form class="contact-form" onsubmit="return sendMessage(event)">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+```html
+<section id="contact">
+  <h3>Contact Me</h3>
 
-  <footer>
-    © 2025 Chitransh Ganesh Yadav. All rights reserved.
-  </footer>
+  <form class="contact-form" onsubmit="return sendMessage(event)">
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      required
+    >
 
-  <script>
-    function sendMessage(event) {
-      event.preventDefault();
-      const name = document.getElementById("name").value;
-      alert(`Thanks, ${name}! Your message has been sent.`);
-      document.querySelector(".contact-form").reset();
-      return false;
-    }
-  </script>
+    <input
+      type="email"
+      id="email"
+      placeholder="Your Email"
+      required
+    >
+
+    <textarea
+      id="message"
+      placeholder="Your Message"
+      rows="5"
+      required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>Or email me directly:</p>
+
+  <a href="mailto:chitransh202504@gmail.com?subject=Portfolio%20Contact">
+    Send me an Email
+  </a>
+</section>
+
+<footer>
+  © 2026 Chitransh Ganesh Yadav. All rights reserved.
+</footer>
+
+<script>
+  function sendMessage(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const subject = encodeURIComponent(
+      "Portfolio Message from " + name
+    );
+
+    const body = encodeURIComponent(
+      "Name: " + name +
+      "\nEmail: " + email +
+      "\n\nMessage:\n" + message
+    );
+
+    window.location.href =
+      "mailto:chitransh202504@gmail.com" +
+      "?subject=" + subject +
+      "&body=" + body;
+
+    return false;
+  }
+</script>
+```
+  
 
 </body>
   </html>
